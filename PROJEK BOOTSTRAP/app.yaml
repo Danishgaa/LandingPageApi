@@ -1,0 +1,63 @@
+# runtime: python39  # Specify the runtime
+
+# handlers:
+#   # Serve the main HTML file for the root URL
+#   - url: /
+#     static_files: index.html
+#     upload: index.html
+
+#   # Serve the CSS file (style.css)
+#   - url: /style.css
+#     static_files: style.css
+#     upload: style.css
+
+#   # Serve the JavaScript file (script.js)
+#   - url: /api.js
+#     static_files: api.js
+#     upload: api.js
+
+#   - url: /images
+# static_dir: /images
+
+runtime: python39  # Specify the runtime
+
+handlers:
+  # Serve the main HTML file for the root URL
+  - url: /
+    static_files: index.html
+    upload: index.html
+
+# Serve the main HTML file for the root URL
+  - url: /Login.html
+    static_files: Login.html
+    upload: Login.html
+
+# Serve the main HTML file for the root URL
+  - url: /Register.html
+    static_files: Register.html
+    upload: Register.html
+
+  # Serve the CSS file (style.css)
+  - url: /style.css
+    static_files: style.css
+    upload: style.css
+
+    # Serve the CSS file (style.css)
+  - url: /styles.css
+    static_files: styles.css
+    upload: styles.css
+
+
+  # Serve the JavaScript file (api.js)
+  - url: /api.js
+    static_files: api.js
+    upload: api.js
+
+  # Serve static files from the images directory
+  - url: /images
+    static_dir: images
+
+    # Serve the berita.json to display
+  - url: /berita2.json
+    static_files: berita2.json
+    upload: berita2.json
